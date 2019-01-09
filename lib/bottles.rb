@@ -1,3 +1,4 @@
+# A class that helps with Bottles
 class Bottles
   def verse(number)
     case number
@@ -6,15 +7,10 @@ class Bottles
         No more bottles of beer on the wall, no more bottles of beer.
         Go to the store and buy some more, 99 bottles of beer on the wall.
       VERSE
-    when 1
-      <<~VERSE
-        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
-        Take it down and pass it around, no more bottles of beer on the wall.
-      VERSE
     else
       <<~VERSE
-        #{number} bottles of beer on the wall, #{number} bottles of beer.
-        Take one down and pass it around, #{number-1} #{container(number-1)} of beer on the wall.
+        #{number} #{container(number)} of beer on the wall, #{number} #{container(number)} of beer.
+        Take #{pronoun(number)} down and pass it around, #{remainder(number)} #{container(number-1)} of beer on the wall.
       VERSE
     end
   end
@@ -25,6 +21,22 @@ class Bottles
 
   def song
     verses(99,0)
+  end
+
+  def remainder(number)
+    if number == 1
+      "no more"
+    else
+      number-1
+    end
+  end
+
+  def pronoun(number)
+    if number == 1
+      "it"
+    else
+      "one"
+    end
   end
 
   def container(number)
