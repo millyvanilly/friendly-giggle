@@ -9,7 +9,7 @@ class Bottles
     when 1
         "#{number} #{container(number)} of beer on the wall, " +
         "#{number} #{container(number)} of beer.\n" +
-        "Take #{pronoun} down and pass it around, " +
+        "Take #{pronoun(number)} down and pass it around, " +
         "no more bottles of beer on the wall.\n"
     else
         "#{number} #{container(number)} of beer on the wall, " +
@@ -35,7 +35,7 @@ class Bottles
     end
   end
 
-  def pronoun
+  def pronoun(number = :FIXME)
     "it"
   end
 
