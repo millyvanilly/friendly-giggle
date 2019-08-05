@@ -10,7 +10,7 @@ class Bottles
         "#{number} #{container(number)} of beer on the wall, " +
         "#{number} #{container(number)} of beer.\n" +
         "Take #{pronoun(number)} down and pass it around, " +
-        "#{quantity} bottles of beer on the wall.\n"
+        "#{quantity(number)} bottles of beer on the wall.\n"
     else
         "#{number} #{container(number)} of beer on the wall, " +
         "#{number} #{container(number)} of beer.\n" +
