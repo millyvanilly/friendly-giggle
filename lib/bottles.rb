@@ -43,7 +43,7 @@ class Bottles
     end
   end
 
-  def quantity(number = :FIXME)
+  def quantity(number)
     if number == 1
       "no more"
     else
