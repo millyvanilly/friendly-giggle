@@ -43,4 +43,6 @@ class Bottles
     end
   end
 
+  def quantity; end
+
 end
