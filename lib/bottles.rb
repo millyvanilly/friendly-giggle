@@ -36,7 +36,11 @@ class Bottles
   end
 
   def pronoun(number = :FIXME)
-    "it"
+    if number == 1
+      "it"
+    else
+      "one"
+    end
   end
 
 end
