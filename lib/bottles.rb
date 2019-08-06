@@ -10,7 +10,7 @@ class Bottles
         "#{number} #{container(number)} of beer on the wall, " +
         "#{number} #{container(number)} of beer.\n" +
         "#{action(number)}, " +
-        "#{quantity(number)} #{container(number-1)} of beer on the wall.\n"
+        "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     end
   end
 
@@ -39,10 +39,10 @@ class Bottles
   end
 
   def quantity(number)
-    if number == 1
+    if number == 0
       "no more"
     else
-      number - 1
+      number
     end
   end
 
