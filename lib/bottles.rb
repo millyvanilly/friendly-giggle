@@ -46,7 +46,7 @@ class Bottles
     end
   end
 
-  def action(number = :FIXME)
+  def action(number)
     if number == 0
       "Go to the store and buy some more"
     else
