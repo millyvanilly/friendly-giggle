@@ -54,4 +54,6 @@ class Bottles
     end
   end
 
+  def successor; end
+
 end
