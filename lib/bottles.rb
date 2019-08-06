@@ -9,7 +9,7 @@ class Bottles
     else
         "#{number} #{container(number)} of beer on the wall, " +
         "#{number} #{container(number)} of beer.\n" +
-        "Take #{pronoun(number)} down and pass it around, " +
+        "#{action(number)}, " +
         "#{quantity(number)} #{container(number-1)} of beer on the wall.\n"
     end
   end
