@@ -46,7 +46,7 @@ class Bottles
     end
   end
 
-  def action
+  def action(number = :FIXME)
     "Go to the store and buy some more"
   end
 
