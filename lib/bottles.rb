@@ -54,6 +54,8 @@ class Bottles
     end
   end
 
-  def successor; end
+  def successor
+    "#{quantity(99)}"
+  end
 
 end
