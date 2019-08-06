@@ -3,7 +3,7 @@ class Bottles
     case number
     when 0
         "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
-        "no more #{container(number)} of beer.\n" +
+        "#{quantity(number)} #{container(number)} of beer.\n" +
         "#{action(number)}, " +
         "#{quantity(99)} #{container(number-1)} of beer on the wall.\n"
     else
