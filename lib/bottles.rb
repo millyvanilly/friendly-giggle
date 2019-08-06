@@ -46,4 +46,6 @@ class Bottles
     end
   end
 
+  def action; end
+
 end
