@@ -7,8 +7,8 @@ class Bottles
         "#{action(number)}, " +
         "#{quantity(99)} #{container(number-1)} of beer on the wall.\n"
     else
-        "#{number} #{container(number)} of beer on the wall, " +
-        "#{number} #{container(number)} of beer.\n" +
+        "#{quantity(number)} #{container(number)} of beer on the wall, " +
+        "#{quantity(number)} #{container(number)} of beer.\n" +
         "#{action(number)}, " +
         "#{quantity(number-1)} #{container(number-1)} of beer on the wall.\n"
     end
