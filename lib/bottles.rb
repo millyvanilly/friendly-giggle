@@ -4,7 +4,7 @@ class Bottles
     when 0
         "No more #{container(number)} of beer on the wall, " +
         "no more #{container(number)} of beer.\n" +
-        "Go to the store and buy some more, " +
+        "#{action}, " +
         "99 #{container(number-1)} of beer on the wall.\n"
     else
         "#{number} #{container(number)} of beer on the wall, " +
