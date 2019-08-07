@@ -1,9 +1,9 @@
 class Bottles
   def verse(number)
-        "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
-        "#{quantity(number)} #{container(number)} of beer.\n" +
-        "#{action(number)}, " +
-        "#{quantity(successor(number))} #{container(number-1)} of beer on the wall.\n"
+    "#{quantity(number).capitalize} #{container(number)} of beer on the wall, " +
+    "#{quantity(number)} #{container(number)} of beer.\n" +
+    "#{action(number)}, " +
+    "#{quantity(successor(number))} #{container(number-1)} of beer on the wall.\n"
   end
 
   def verses(start_of_verse, end_of_verse)
