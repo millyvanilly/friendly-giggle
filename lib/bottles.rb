@@ -15,7 +15,7 @@ class Bottles
   end
 
   def container(number)
-    BottleNumber.new(number).container(number)
+    BottleNumber.new(number).container
   end
 
   def pronoun(number)
@@ -38,11 +38,12 @@ end
 
 class BottleNumber
   attr_reader :number
+
   def initialize(number)
     @number = number
   end
 
-  def container(number)
+  def container(number_delete=nil)
     if number == 1
       "bottle"
     else
