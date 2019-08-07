@@ -19,7 +19,7 @@ class Bottles
   end
 
   def pronoun(number)
-    BottleNumber.new(number).pronoun(number)
+    BottleNumber.new(number).pronoun
   end
 
   def quantity(number)
@@ -51,7 +51,7 @@ class BottleNumber
     end
   end
 
-  def pronoun(number)
+  def pronoun(number_delete = nil)
     if number == 1
       "it"
     else
