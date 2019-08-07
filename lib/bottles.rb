@@ -23,7 +23,7 @@ class Bottles
   end
 
   def quantity(number)
-    BottleNumber.new(number).quantity(number)
+    BottleNumber.new(number).quantity
   end
 
   def action(number)
@@ -59,7 +59,7 @@ class BottleNumber
     end
   end
 
-  def quantity(number)
+  def quantity(number_delete=nil)
     if number == 0
       "no more"
     else
