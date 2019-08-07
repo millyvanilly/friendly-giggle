@@ -16,19 +16,10 @@ class Bottles
 
   def container(number)
     BottleNumber.new(number).container(number)
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
   end
 
   def pronoun(number)
-    if number == 1
-      "it"
-    else
-      "one"
-    end
+    BottleNumber.new(number).pronoun(number)
   end
 
   def quantity(number)
