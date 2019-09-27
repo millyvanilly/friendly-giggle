@@ -21,6 +21,8 @@ class Bottles
     case number
     when 0
       BottleNumber0.new(number)
+    when 1
+      BottleNumber1.new(number)
     else
       BottleNumber.new(number)
     end
