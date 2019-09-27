@@ -84,3 +84,6 @@ class BottleNumber0 < BottleNumber
     "no more"
   end
 end
+
+class BottleNumber1 < BottleNumber
+end
