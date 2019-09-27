@@ -1,6 +1,7 @@
 class Bottles
   def verse(number)
-    bottle_number = BottleNumber.new(number)
+    bottle_number = bottle_number_for(number)
+    # next_bottle_number =  bottle_number.successor
     next_bottle_number = BottleNumber.new(bottle_number.successor)
     "#{bottle_number} of beer on the wall, ".capitalize +
     "#{bottle_number} of beer.\n" +
@@ -14,6 +15,10 @@ class Bottles
 
   def song
     verses(99,0)
+  end
+
+  def bottle_number_for(number)
+    BottleNumber.new(number)
   end
 
 end
