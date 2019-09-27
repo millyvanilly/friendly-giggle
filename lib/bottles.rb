@@ -75,5 +75,8 @@ class BottleNumber
   end
 end
 
-class BottleNumber0
+class BottleNumber0 < BottleNumber
+  def successor
+    99
+  end
 end
