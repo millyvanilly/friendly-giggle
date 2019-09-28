@@ -42,11 +42,7 @@ class BottleNumber
   end
 
   def container
-    if number == 1
-      "bottle"
-    else
-      "bottles"
-    end
+    "bottles"
   end
 
   def pronoun
@@ -54,11 +50,7 @@ class BottleNumber
   end
 
   def quantity
-    if number == 0
-      "no more"
-    else
-      number.to_s
-    end
+    number.to_s
   end
 
   def action
