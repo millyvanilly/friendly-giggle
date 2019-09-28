@@ -16,18 +16,6 @@ class Bottles
   def song
     verses(99,0)
   end
-
-  def bottle_number_for(number)
-    case number
-    when 0
-      BottleNumber0
-    when 1
-      BottleNumber1
-    else
-      BottleNumber
-    end.new(number)
-  end
-
 end
 
 class BottleNumber
